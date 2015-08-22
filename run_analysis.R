@@ -44,7 +44,7 @@ activityLabels <- read.table("./rawdata/activity_labels.txt")
 allMeanStd <- mutate(allMeanStd, Activity = activityLabels$V2[Activity])
 
 # write tidy data set to file 
-write.table(allMeanStd, file="tidydata/step4_allMeanStd.txt")
+write.table(allMeanStd, file="tidydata/step4_allMeanStd.txt", row.names = FALSE)
 
 # copy tidy dataset 
 allAv <- allMeanStd
@@ -84,7 +84,7 @@ laying_all$Activity = "LAYING"
 average_all <- rbind(walking_all, walking_downstairs_all, walking_upstairs_all, sitting_all, standing_all, laying_all)
 
 # write table to file
-write.table(average_all, file="tidydata/step5_average_all.txt")
+write.table(average_all, file="tidydata/step5_average_all.txt", row.names = FALSE)
 
 # adding some additional metadata to facilitate CodeBook creation
 attr(average_all, "source") <- "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones"
