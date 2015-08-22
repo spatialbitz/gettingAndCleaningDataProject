@@ -10,6 +10,7 @@
 * tidydata/step4_allMeanStd.txt: Containing the tidy data set according to step 4 of the assignment
 * tidydata/step5_average_all.txt: Containing the tidy data set according to step 4 of the assignment  
 
+Please Note: Refer to the comments in run_analysis.R for a step-by-step description of the process!  
  
 
 ## Source: 
